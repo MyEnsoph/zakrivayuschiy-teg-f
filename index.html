@@ -537,7 +537,12 @@
       </article>
 
       <!-- КНОПКА СОХРАНЕНИЯ ПОСЛЕ ВСЕХ КАРТОЧЕК -->
-      <button class="button save-button">
+      <button
+        type="button"
+        class="button save-button"
+        onclick="window['modal-window'].showModal()"
+        aria-controls="modal-window"
+      >
         <svg class="save-button__icon" width="21" height="21">
           <use href="./svg/floppy.svg#floppy"></use>
         </svg>
@@ -545,32 +550,21 @@
       </button>
     </main>
 
-    <dialog class="modal">
+    <dialog id="modal-window" class="modal">
       <div class="modal__container">
         <svg class="modal__icon" width="39" height="39">
           <use href="./svg/floppy.svg#floppy"></use>
         </svg>
-        <p class="modal__text">Сохранить эту память навсегда?</p>
+        <p class="modal__text">Вставьте дискету, чтобы продолжить</p>
       </div>
-      <button class="button modal__close-button">
+      <button
+        type="button"
+        class="button modal__close-button"
+        onclick="window['modal-window'].close()"
+      >
         <span class="button__text">ОК</span>
       </button>
     </dialog>
-
     <script src="./scripts/like.js"></script>
-    <script>
-      // Открытие и закрытие модального окна
-      const saveButton = document.querySelector(".save-button");
-      const modal = document.querySelector(".modal");
-      const closeButton = document.querySelector(".modal__close-button");
-
-      if (saveButton && modal) {
-        saveButton.addEventListener("click", () => modal.showModal());
-      }
-
-      if (closeButton && modal) {
-        closeButton.addEventListener("click", () => modal.close());
-      }
-    </script>
   </body>
 </html>
