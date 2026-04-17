@@ -366,23 +366,3 @@
     padding: 0.25rem 0.5rem;
   }
 }
-
-@media (width <=375px) {
-  .header-logo {
-    font-size: clamp(1.875rem, -0.5rem + 15.2vw, 3.0625rem);
-  }
-
-  .card__image-watermark {
-    top: 23px;
-    right: 11px;
-  }
-
-  .save-button {
-    flex-direction: column;
-    padding: 15px 0;
-  }
-
-  .save-button .save-icon {
-    inline-size: 28px;
-  }
-}
