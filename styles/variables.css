@@ -8,6 +8,9 @@
   --text-weight: 400;
   --title-weight: 700;
 
+  --text-weight-p: 410;
+  --title-weight-p: 715;
+
   /* Размеры */
   --page-width: clamp(18.75rem, 100%, 43.5rem);
   --header-logo-size: clamp(3.063rem, 1.909rem + 4.92vw, 4.063rem);
@@ -15,9 +18,8 @@
 
   /* Цвета */
   --color: #1a1a1a;
-  --bg-color: #e7e7e7;
+  --bg-color: #ffffff;
   --shadow-color: #e7e7e7;
-
   --heart-contour: #000000;
   --heart-sparks: #ff0000;
   --contour-color: #000000;

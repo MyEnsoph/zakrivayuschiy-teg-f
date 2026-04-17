@@ -16,8 +16,8 @@
   background-size: cover;
   background-attachment: fixed;
   background-repeat: repeat;
-  font-family: var(--font-main);
-  font-variation-settings: "wght" var(--text-weight);
+  font-family: var(--main-font);
+  font-variation-settings: "wght" var(--text-weight-p);
   min-inline-size: 320px;
   min-block-size: 100dvb;
   margin: 0 auto;
@@ -74,7 +74,7 @@
   font-family: var(--main-font);
   font-size: var(--font-size);
   background-color: var(--bg-color);
-  font-variation-settings: "wght" var(--title-weight);
+  font-variation-settings: "wght" var(--title-weight-p);
   padding: 5px 10px;
   color: var(--color);
 }
@@ -102,6 +102,11 @@
   opacity: 0.5;
   text-transform: uppercase;
   font-size: 14px;
+  text-shadow:
+    -1px 0 var(--shadow-color),
+    0 1px var(--shadow-color),
+    1px 0 var(--shadow-color),
+    0 -1px var(--shadow-color);
 }
 
 @supports (text-stroke: 1px var(--shadow-color)) or
@@ -113,19 +118,9 @@
   }
 }
 
-@supports not ((text-stroke: 1px black) or (-webkit-text-stroke: 1px black)) {
-  .card__label {
-    text-shadow:
-      -1px 0 var(--shadow-color),
-      0 1px var(--shadow-color),
-      1px 0 var(--shadow-color),
-      0 -1px var(--shadow-color);
-  }
-}
-
 .card__text {
   font-family: var(--main-font);
-  font-variation-settings: "wght" var(--text-weight);
+  font-variation-settings: "wght" var(--text-weight-p);
   font-size: var(--font-size);
   line-height: 21px;
   padding: 1.5rem;
@@ -162,6 +157,9 @@
 
 .button:focus {
   outline: none;
+}
+
+.button:focus-visible {
   box-shadow: var(--button-focus-shadow);
 }
 
@@ -190,46 +188,7 @@
 }
 
 .card__like-button {
-  position: relative;
-  font-family: var(--accent-font);
-  font-size: 0.875rem;
-  padding: 0.5rem 1rem;
-  border: 2px solid var(--color);
-  background-color: var(--bg-color);
-  color: var(--button-text-color);
-  cursor: pointer;
-  overflow: hidden;
-  transition: box-shadow 0.3s ease;
   width: 130px;
-}
-
-.card__like-button:focus {
-  outline: none;
-  box-shadow: 2px 2px 0 var(--color);
-}
-
-.card__like-button::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: var(--color);
-  transform: translateX(-100%);
-  transition: transform 0.5s ease-in-out;
-  z-index: 0;
-}
-
-.card__like-button:hover::before {
-  transform: translateX(0);
-}
-
-.card__like-button .button__text {
-  position: relative;
-  z-index: 1;
-  mix-blend-mode: difference;
-  color: var(--button-text-color);
 }
 
 /* КНОПКА С ИКОНКОЙ СЕРДЦА */
@@ -307,10 +266,11 @@
   padding: 2rem;
   max-width: 400px;
   width: 90%;
+  display: none;
 }
 
 .modal::backdrop {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.75);
 }
 
 .modal[open] {

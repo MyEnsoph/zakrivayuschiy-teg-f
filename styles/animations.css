@@ -10,6 +10,13 @@
 
 */
 
+/* БАЗОВЫЕ ПЕРЕХОДЫ ДЛЯ СЕРДЦА  */
+
+.like-icon .core,
+.like-icon .main-body {
+  fill: transparent;
+}
+
 .heart .contour {
   transition: fill 0.1s linear;
 }
@@ -45,7 +52,7 @@
   fill: var(--animation-fill-color);
 }
 
-/* СОСТОЯНИЕ IS-LIKED (ЛАЙК ПОСТАВЛЕН) */
+/*  СОСТОЯНИЕ IS-LIKED (ЛАЙК ПОСТАВЛЕН) */
 
 .like-icon.is-liked .core {
   fill: var(--animation-fill-color);
@@ -59,7 +66,7 @@
 
 .like-icon.is-liked .contour {
   fill: var(--animation-fill-color);
-  transition: fill 0.3s linear 0.1s;
+  transition: fill 0.3s linear 0.06s;
 }
 
 /* АНИМАЦИЯ МАСШТАБИРОВАНИЯ СЕРДЦА  */
@@ -74,7 +81,7 @@
 }
 
 .like-icon.is-liked .heart {
-  animation: heart-scale 0.3s ease-in 0.1s 1 forwards;
+  animation: heart-scale 0.3s ease-in 0.1s 1;
   transform-origin: center;
 }
 
