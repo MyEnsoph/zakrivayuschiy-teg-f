@@ -1,1 +1,53 @@
-/* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+  /* Шрифты */
+  --main-font: "Inter", sans-serif;
+  --accent-font: "PressStart2P", monospace;
+  --font-size: 18px;
+  --font-size-label: 14px;
+
+  --text-weight: 400;
+  --title-weight: 700;
+
+  /* Размеры */
+  --page-width: clamp(18.75rem, 100%, 43.5rem);
+  --header-logo-size: clamp(3.063rem, 1.909rem + 4.92vw, 4.063rem);
+  --header-title-size: clamp(0.875rem, 0.226rem + 2.77vw, 1.438rem);
+
+  /* Цвета */
+  --color: #1a1a1a;
+  --bg-color: #e7e7e7;
+  --shadow-color: #e7e7e7;
+
+  --heart-contour: #000000;
+  --heart-sparks: #ff0000;
+  --contour-color: #000000;
+  --animation-fill-color: #ff0000;
+  --label-stroke-color: #ffffff;
+
+  /* Градиент */
+  --bg-gradient:
+    repeating-linear-gradient(
+      90deg,
+      #d3d3d3 0px,
+      #d3d3d3 2px,
+      transparent 2.1px,
+      transparent 4px
+    ),
+    repeating-linear-gradient(
+      180deg,
+      #d3d3d3 0px,
+      #d3d3d3 2px,
+      transparent 2.1px,
+      transparent 4px
+    ),
+    linear-gradient(180deg, #e7e7e7 0%, #e7e7e7 0.01%, #1a1a1a 100%);
+
+  --main-border: 2px solid var(--color);
+
+  /* Кнопки */
+  --button-text-color: #ffffff;
+  --button-bg-color: #000000;
+  --button-focus-shadow: 2px 2px 0 var(--color);
+  --button-transition: 0.3s ease;
+  --button-pseudo-transition: 0.5s ease-in-out;
+}

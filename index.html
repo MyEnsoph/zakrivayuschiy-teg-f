@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
@@ -9,10 +9,568 @@
     <link rel="stylesheet" href="./styles/globals.css" />
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./styles/animations.css" />
+    <link rel="icon" href="images/favicon.ico" sizes="any" />
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
   </head>
   <body class="page">
-    <header class="header"></header>
-    <main></main>
+    <header class="header">
+      <h1 class="header__logo">&lt;/HTML&gt;</h1>
+      <p class="header__title">Закрывающий тег</p>
+    </header>
+
+    <main class="content">
+      <!-- КАРТОЧКА 1 -->
+      <article class="card">
+        <h2 class="card__title">
+          Фритрек и нулевой спринт: Подготовка к работе
+        </h2>
+
+        <div class="card__image-box">
+          <img class="card__image" src="./images/card1.png" alt="Машина 1" />
+          <span class="card__label">Первый шок</span>
+        </div>
+
+        <div class="card__text">
+          <p>
+            Когда я впервые открыла макет в Figma, мне показалось, что это
+            космический корабль, а не веб-страница. Что такое clamp? Почему
+            шрифты не подключаются? Где мои отступы?
+          </p>
+          <p>
+            Первая неделя была похожа на попытку собрать мебель из IKEA без
+            инструкции. Но с каждым часом становилось понятнее, и даже появился
+            азарт. Главное — не сдаваться в первый же день!
+          </p>
+        </div>
+
+        <div class="card__like-group">
+          <button type="button" class="card__icon-button">
+            <svg
+              class="like-icon"
+              width="39"
+              height="36"
+              viewBox="0 0 39 36"
+              fill="none"
+            >
+              <g class="heart">
+                <path
+                  class="contour"
+                  d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z"
+                  fill="var(--heart-contour)"
+                />
+                <path
+                  class="main-body"
+                  d="M12 9H9V12H12V9ZM15 12H12V15H15V12ZM18 9H15V12H18V9ZM12 15H9V18H12V15ZM15 15H12V18H15V15ZM15 18H12V21H15V18ZM18 12H15V15H18V12ZM18 21H15V24H18V21ZM18 18H15V21H18V18ZM27 9H30V12H27V9ZM24 9H27V12H24V9ZM27 12H30V15H27V12ZM24 12H27V15H24V12ZM21 9H24V12H21V9ZM27 15H30V18H27V15ZM24 15H27V18H24V15ZM24 18H27V21H24V18ZM21 12H24V15H21V12ZM21 21H24V24H21V21ZM21 18H24V21H21V18ZM21 21H18V24H21V21ZM21 24H18V27H21V24Z"
+                  fill="none"
+                />
+                <path
+                  class="core"
+                  d="M18 15H15V18H18V15ZM21 15H24V18H21V15ZM21 15H18V18H21V15ZM21 12H18V15H21V12ZM21 18H18V21H21V18Z"
+                  fill="none"
+                />
+              </g>
+              <path
+                class="sparks"
+                d="M36 13H39V16H36V13ZM27 27H30V30H27V27ZM18 33H21V36H18V33ZM9 27H12V30H9V27ZM24 0H27V3H24V0ZM33 3H36V6H33V3ZM3 3H6V6H3V3ZM12 0H15V3H12V0ZM0 13H3V16H0V13Z"
+                fill="var(--heart-sparks)"
+              />
+            </svg>
+          </button>
+          <button type="button" class="card__like-button">
+            <span class="button__text">Like</span>
+          </button>
+        </div>
+      </article>
+
+      <!-- КАРТОЧКА 2: -->
+      <article class="card">
+        <h2 class="card__title">Основы HTML: Структура страницы</h2>
+
+        <div class="card__image-box">
+          <img
+            class="card__image filter-grayscale"
+            src="./images/card2.png"
+            alt="Картинка 2"
+          />
+          <span class="card__label">структура</span>
+        </div>
+
+        <div class="card__text">
+          <p>
+            Помню, как впервые увидела результат своей работы в браузере. Это
+            был просто заголовок и абзац, но я чувствовала себя волшебницей.
+            HTML оказался не таким страшным, как думала.
+          </p>
+          <p>
+            Самое сложное было запомнить, какие теги парные, а какие нет. Но
+            когда ты понимаешь логику — всё встаёт на свои места. Теперь я вижу
+            "скелет" любой страницы!
+          </p>
+        </div>
+
+        <div class="card__like-group">
+          <button type="button" class="card__icon-button">
+            <svg
+              class="like-icon"
+              width="39"
+              height="36"
+              viewBox="0 0 39 36"
+              fill="none"
+            >
+              <g class="heart">
+                <path
+                  class="contour"
+                  d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z"
+                  fill="var(--heart-contour)"
+                />
+                <path
+                  class="main-body"
+                  d="M12 9H9V12H12V9ZM15 12H12V15H15V12ZM18 9H15V12H18V9ZM12 15H9V18H12V15ZM15 15H12V18H15V15ZM15 18H12V21H15V18ZM18 12H15V15H18V12ZM18 21H15V24H18V21ZM18 18H15V21H18V18ZM27 9H30V12H27V9ZM24 9H27V12H24V9ZM27 12H30V15H27V12ZM24 12H27V15H24V12ZM21 9H24V12H21V9ZM27 15H30V18H27V15ZM24 15H27V18H24V15ZM24 18H27V21H24V18ZM21 12H24V15H21V12ZM21 21H24V24H21V21ZM21 18H24V21H21V18ZM21 21H18V24H21V21ZM21 24H18V27H21V24Z"
+                  fill="none"
+                />
+                <path
+                  class="core"
+                  d="M18 15H15V18H18V15ZM21 15H24V18H21V15ZM21 15H18V18H21V15ZM21 12H18V15H21V12ZM21 18H18V21H21V18Z"
+                  fill="none"
+                />
+              </g>
+              <path
+                class="sparks"
+                d="M36 13H39V16H36V13ZM27 27H30V30H27V27ZM18 33H21V36H18V33ZM9 27H12V30H9V27ZM24 0H27V3H24V0ZM33 3H36V6H33V3ZM3 3H6V6H3V3ZM12 0H15V3H12V0ZM0 13H3V16H0V13Z"
+                fill="var(--heart-sparks)"
+              />
+            </svg>
+          </button>
+          <button type="button" class="card__like-button">
+            <span class="button__text">Like</span>
+          </button>
+        </div>
+      </article>
+
+      <!-- КАРТОЧКА 3: -->
+      <article class="card">
+        <h2 class="card__title">CSS: Первые стили и красота</h2>
+
+        <div class="card__image-box">
+          <img
+            class="card__image filter-brightness"
+            src="./images/card3.png"
+            alt="Картинка 3"
+          />
+          <span class="card__label">преображение</span>
+        </div>
+
+        <div class="card__text">
+          <p>
+            Когда я подключила первый CSS-файл и увидела, как серая страница
+            стала цветной — это было магия. Я начала экспериментировать с
+            цветами, шрифтами, отступами.
+          </p>
+          <p>
+            Иногда уходили часы на то, чтобы понять, почему margin не работает
+            или почему цвет не применяется. Но каждый маленький успех дарил
+            невероятное чувство победы.
+          </p>
+        </div>
+
+        <div class="card__like-group">
+          <button type="button" class="card__icon-button">
+            <svg
+              class="like-icon"
+              width="39"
+              height="36"
+              viewBox="0 0 39 36"
+              fill="none"
+            >
+              <g class="heart">
+                <path
+                  class="contour"
+                  d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z"
+                  fill="var(--heart-contour)"
+                />
+                <path
+                  class="main-body"
+                  d="M12 9H9V12H12V9ZM15 12H12V15H15V12ZM18 9H15V12H18V9ZM12 15H9V18H12V15ZM15 15H12V18H15V15ZM15 18H12V21H15V18ZM18 12H15V15H18V12ZM18 21H15V24H18V21ZM18 18H15V21H18V18ZM27 9H30V12H27V9ZM24 9H27V12H24V9ZM27 12H30V15H27V12ZM24 12H27V15H24V12ZM21 9H24V12H21V9ZM27 15H30V18H27V15ZM24 15H27V18H24V15ZM24 18H27V21H24V18ZM21 12H24V15H21V12ZM21 21H24V24H21V21ZM21 18H24V21H21V18ZM21 21H18V24H21V21ZM21 24H18V27H21V24Z"
+                  fill="none"
+                />
+                <path
+                  class="core"
+                  d="M18 15H15V18H18V15ZM21 15H24V18H21V15ZM21 15H18V18H21V15ZM21 12H18V15H21V12ZM21 18H18V21H21V18Z"
+                  fill="none"
+                />
+              </g>
+              <path
+                class="sparks"
+                d="M36 13H39V16H36V13ZM27 27H30V30H27V27ZM18 33H21V36H18V33ZM9 27H12V30H9V27ZM24 0H27V3H24V0ZM33 3H36V6H33V3ZM3 3H6V6H3V3ZM12 0H15V3H12V0ZM0 13H3V16H0V13Z"
+                fill="var(--heart-sparks)"
+              />
+            </svg>
+          </button>
+          <button type="button" class="card__like-button">
+            <span class="button__text">Like</span>
+          </button>
+        </div>
+      </article>
+
+      <!-- КАРТОЧКА 4: -->
+      <article class="card">
+        <h2 class="card__title">Flexbox: Магия выравнивания</h2>
+
+        <div class="card__image-box">
+          <img
+            class="card__image filter-sepia"
+            src="./images/card4.png"
+            alt="Картинка 4"
+          />
+          <span class="card__label">откровение</span>
+        </div>
+
+        <div class="card__text">
+          <p>
+            Flexbox перевернул моё представление о вёрстке. Раньше я мучилась с
+            float и позиционированием. Однако не так страшен черт как его малюют
+            и теперь Justify-content, align-items стали моими лучшими друзьями.
+          </p>
+          <p>
+            Когда я наконец поняла разницу между space-between и space-around, я
+            почувствовала себя джедаем вёрстки. Теперь я могу выровнять что
+            угодно где угодно!
+          </p>
+        </div>
+
+        <div class="card__like-group">
+          <button type="button" class="card__icon-button">
+            <svg
+              class="like-icon"
+              width="39"
+              height="36"
+              viewBox="0 0 39 36"
+              fill="none"
+            >
+              <g class="heart">
+                <path
+                  class="contour"
+                  d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z"
+                  fill="var(--heart-contour)"
+                />
+                <path
+                  class="main-body"
+                  d="M12 9H9V12H12V9ZM15 12H12V15H15V12ZM18 9H15V12H18V9ZM12 15H9V18H12V15ZM15 15H12V18H15V15ZM15 18H12V21H15V18ZM18 12H15V15H18V12ZM18 21H15V24H18V21ZM18 18H15V21H18V18ZM27 9H30V12H27V9ZM24 9H27V12H24V9ZM27 12H30V15H27V12ZM24 12H27V15H24V12ZM21 9H24V12H21V9ZM27 15H30V18H27V15ZM24 15H27V18H24V15ZM24 18H27V21H24V18ZM21 12H24V15H21V12ZM21 21H24V24H21V21ZM21 18H24V21H21V18ZM21 21H18V24H21V21ZM21 24H18V27H21V24Z"
+                  fill="none"
+                />
+                <path
+                  class="core"
+                  d="M18 15H15V18H18V15ZM21 15H24V18H21V15ZM21 15H18V18H21V15ZM21 12H18V15H21V12ZM21 18H18V21H21V18Z"
+                  fill="none"
+                />
+              </g>
+              <path
+                class="sparks"
+                d="M36 13H39V16H36V13ZM27 27H30V30H27V27ZM18 33H21V36H18V33ZM9 27H12V30H9V27ZM24 0H27V3H24V0ZM33 3H36V6H33V3ZM3 3H6V6H3V3ZM12 0H15V3H12V0ZM0 13H3V16H0V13Z"
+                fill="var(--heart-sparks)"
+              />
+            </svg>
+          </button>
+          <button type="button" class="card__like-button">
+            <span class="button__text">Like</span>
+          </button>
+        </div>
+      </article>
+
+      <!-- КАРТОЧКА 5: -->
+      <article class="card">
+        <h2 class="card__title">Grid: Мощные сетки</h2>
+
+        <div class="card__image-box">
+          <img
+            class="card__image filter-blur"
+            src="./images/card5.png"
+            alt="Картинка 5"
+          />
+          <span class="card__label">сила</span>
+        </div>
+
+        <div class="card__text">
+          <p>
+            Grid — это уже не просто выравнивание, это архитектура. Сначала было
+            сложно: фракции, области, линии. Но когда ты понимаешь, как создать
+            сложный макет в несколько строк — это невероятно.
+          </p>
+          <p>
+            Теперь я смотрю на сложные сайты и понимаю, как они устроены. Grid
+            дал мне суперсилу создавать адаптивные макеты без танцев с бубном.
+          </p>
+        </div>
+
+        <div class="card__like-group">
+          <button type="button" class="card__icon-button">
+            <svg
+              class="like-icon"
+              width="39"
+              height="36"
+              viewBox="0 0 39 36"
+              fill="none"
+            >
+              <g class="heart">
+                <path
+                  class="contour"
+                  d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z"
+                  fill="var(--heart-contour)"
+                />
+                <path
+                  class="main-body"
+                  d="M12 9H9V12H12V9ZM15 12H12V15H15V12ZM18 9H15V12H18V9ZM12 15H9V18H12V15ZM15 15H12V18H15V15ZM15 18H12V21H15V18ZM18 12H15V15H18V12ZM18 21H15V24H18V21ZM18 18H15V21H18V18ZM27 9H30V12H27V9ZM24 9H27V12H24V9ZM27 12H30V15H27V12ZM24 12H27V15H24V12ZM21 9H24V12H21V9ZM27 15H30V18H27V15ZM24 15H27V18H24V15ZM24 18H27V21H24V18ZM21 12H24V15H21V12ZM21 21H24V24H21V21ZM21 18H24V21H21V18ZM21 21H18V24H21V21ZM21 24H18V27H21V24Z"
+                  fill="none"
+                />
+                <path
+                  class="core"
+                  d="M18 15H15V18H18V15ZM21 15H24V18H21V15ZM21 15H18V18H21V15ZM21 12H18V15H21V12ZM21 18H18V21H21V18Z"
+                  fill="none"
+                />
+              </g>
+              <path
+                class="sparks"
+                d="M36 13H39V16H36V13ZM27 27H30V30H27V27ZM18 33H21V36H18V33ZM9 27H12V30H9V27ZM24 0H27V3H24V0ZM33 3H36V6H33V3ZM3 3H6V6H3V3ZM12 0H15V3H12V0ZM0 13H3V16H0V13Z"
+                fill="var(--heart-sparks)"
+              />
+            </svg>
+          </button>
+          <button type="button" class="card__like-button">
+            <span class="button__text">Like</span>
+          </button>
+        </div>
+      </article>
+
+      <!-- КАРТОЧКА 6: -->
+      <article class="card">
+        <h2 class="card__title">Адаптив: Мобильная версия</h2>
+
+        <div class="card__image-box">
+          <img
+            class="card__image filter-hue-rotate"
+            src="./images/card6.png"
+            alt="Картинка 6"
+          />
+          <span class="card__label">гибкость</span>
+        </div>
+
+        <div class="card__text">
+          <p>
+            Первый раз, когда я сжала окно браузера и всё сломалось — это был
+            крик души. Медиазапросы, брейкпоинты, mobile-first... Казалось, что
+            я учу язык заново.
+          </p>
+          <p>
+            Но когда я поняла логику и сделала свой первый адаптивный макет — я
+            была на седьмом небе. Теперь мой сайт красиво смотрится и на
+            телефоне, и на мониторе!
+          </p>
+        </div>
+
+        <div class="card__like-group">
+          <button type="button" class="card__icon-button">
+            <svg
+              class="like-icon"
+              width="39"
+              height="36"
+              viewBox="0 0 39 36"
+              fill="none"
+            >
+              <g class="heart">
+                <path
+                  class="contour"
+                  d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z"
+                  fill="var(--heart-contour)"
+                />
+                <path
+                  class="main-body"
+                  d="M12 9H9V12H12V9ZM15 12H12V15H15V12ZM18 9H15V12H18V9ZM12 15H9V18H12V15ZM15 15H12V18H15V15ZM15 18H12V21H15V18ZM18 12H15V15H18V12ZM18 21H15V24H18V21ZM18 18H15V21H18V18ZM27 9H30V12H27V9ZM24 9H27V12H24V9ZM27 12H30V15H27V12ZM24 12H27V15H24V12ZM21 9H24V12H21V9ZM27 15H30V18H27V15ZM24 15H27V18H24V15ZM24 18H27V21H24V18ZM21 12H24V15H21V12ZM21 21H24V24H21V21ZM21 18H24V21H21V18ZM21 21H18V24H21V21ZM21 24H18V27H21V24Z"
+                  fill="none"
+                />
+                <path
+                  class="core"
+                  d="M18 15H15V18H18V15ZM21 15H24V18H21V15ZM21 15H18V18H21V15ZM21 12H18V15H21V12ZM21 18H18V21H21V18Z"
+                  fill="none"
+                />
+              </g>
+              <path
+                class="sparks"
+                d="M36 13H39V16H36V13ZM27 27H30V30H27V27ZM18 33H21V36H18V33ZM9 27H12V30H9V27ZM24 0H27V3H24V0ZM33 3H36V6H33V3ZM3 3H6V6H3V3ZM12 0H15V3H12V0ZM0 13H3V16H0V13Z"
+                fill="var(--heart-sparks)"
+              />
+            </svg>
+          </button>
+          <button type="button" class="card__like-button">
+            <span class="button__text">Like</span>
+          </button>
+        </div>
+      </article>
+
+      <!-- КАРТОЧКА 7: Анимации и интерактив -->
+      <article class="card">
+        <h2 class="card__title">Анимации: Оживляем страницу</h2>
+
+        <div class="card__image-box">
+          <img
+            class="card__image filter-invert"
+            src="./images/card7.png"
+            alt="Картинка 7"
+          />
+          <span class="card__label">оживление</span>
+        </div>
+
+        <div class="card__text">
+          <p>
+            transition, transform, keyframes — эти слова звучали как заклинания.
+            Когда я впервые сделал плавное появление кнопки — я пересматривал
+            этот эффект минут двадцать.
+          </p>
+          <p>
+            Анимации добавили жизни моим проектам. Теперь они не просто
+            статичные страницы, а живые, отзывчивые интерфейсы. Особенно горжусь
+            анимацией сердца — это было сложно, но оно того стоило!
+          </p>
+        </div>
+
+        <div class="card__like-group">
+          <button type="button" class="card__icon-button">
+            <svg
+              class="like-icon"
+              width="39"
+              height="36"
+              viewBox="0 0 39 36"
+              fill="none"
+            >
+              <g class="heart">
+                <path
+                  class="contour"
+                  d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z"
+                  fill="var(--heart-contour)"
+                />
+                <path
+                  class="main-body"
+                  d="M12 9H9V12H12V9ZM15 12H12V15H15V12ZM18 9H15V12H18V9ZM12 15H9V18H12V15ZM15 15H12V18H15V15ZM15 18H12V21H15V18ZM18 12H15V15H18V12ZM18 21H15V24H18V21ZM18 18H15V21H18V18ZM27 9H30V12H27V9ZM24 9H27V12H24V9ZM27 12H30V15H27V12ZM24 12H27V15H24V12ZM21 9H24V12H21V9ZM27 15H30V18H27V15ZM24 15H27V18H24V15ZM24 18H27V21H24V18ZM21 12H24V15H21V12ZM21 21H24V24H21V21ZM21 18H24V21H21V18ZM21 21H18V24H21V21ZM21 24H18V27H21V24Z"
+                  fill="none"
+                />
+                <path
+                  class="core"
+                  d="M18 15H15V18H18V15ZM21 15H24V18H21V15ZM21 15H18V18H21V15ZM21 12H18V15H21V12ZM21 18H18V21H21V18Z"
+                  fill="none"
+                />
+              </g>
+              <path
+                class="sparks"
+                d="M36 13H39V16H36V13ZM27 27H30V30H27V27ZM18 33H21V36H18V33ZM9 27H12V30H9V27ZM24 0H27V3H24V0ZM33 3H36V6H33V3ZM3 3H6V6H3V3ZM12 0H15V3H12V0ZM0 13H3V16H0V13Z"
+                fill="var(--heart-sparks)"
+              />
+            </svg>
+          </button>
+          <button type="button" class="card__like-button">
+            <span class="button__text">Like</span>
+          </button>
+        </div>
+      </article>
+
+      <!-- КАРТОЧКА 8: Финал -->
+      <article class="card">
+        <h2 class="card__title">Финальный проект: Всё вместе</h2>
+
+        <div class="card__image-box">
+          <img
+            class="card__image filter-multiple"
+            src="./images/card8.png"
+            alt="Картинка 8"
+          />
+          <span class="card__label">победа</span>
+        </div>
+
+        <div class="card__text">
+          <p>
+            Вот он — финишная прямая. Оглядываясь назад, я вижу долгий путь: от
+            непонимания до уверенности. Было сложно, были слёзы, были бессонные
+            ночи. Но я справилась!
+          </p>
+          <p>
+            Теперь я могу создать сайт с нуля: резиновый, адаптивный, с
+            анимациями и модальными окнами. Это не просто проект — это
+            доказательство того, что я могу всё. Спасибо за этот путь!
+          </p>
+        </div>
+
+        <div class="card__like-group">
+          <button type="button" class="card__icon-button">
+            <svg
+              class="like-icon"
+              width="39"
+              height="36"
+              viewBox="0 0 39 36"
+              fill="none"
+            >
+              <g class="heart">
+                <path
+                  class="contour"
+                  d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z"
+                  fill="var(--heart-contour)"
+                />
+                <path
+                  class="main-body"
+                  d="M12 9H9V12H12V9ZM15 12H12V15H15V12ZM18 9H15V12H18V9ZM12 15H9V18H12V15ZM15 15H12V18H15V15ZM15 18H12V21H15V18ZM18 12H15V15H18V12ZM18 21H15V24H18V21ZM18 18H15V21H18V18ZM27 9H30V12H27V9ZM24 9H27V12H24V9ZM27 12H30V15H27V12ZM24 12H27V15H24V12ZM21 9H24V12H21V9ZM27 15H30V18H27V15ZM24 15H27V18H24V15ZM24 18H27V21H24V18ZM21 12H24V15H21V12ZM21 21H24V24H21V21ZM21 18H24V21H21V18ZM21 21H18V24H21V21ZM21 24H18V27H21V24Z"
+                  fill="none"
+                />
+                <path
+                  class="core"
+                  d="M18 15H15V18H18V15ZM21 15H24V18H21V15ZM21 15H18V18H21V15ZM21 12H18V15H21V12ZM21 18H18V21H21V18Z"
+                  fill="none"
+                />
+              </g>
+              <path
+                class="sparks"
+                d="M36 13H39V16H36V13ZM27 27H30V30H27V27ZM18 33H21V36H18V33ZM9 27H12V30H9V27ZM24 0H27V3H24V0ZM33 3H36V6H33V3ZM3 3H6V6H3V3ZM12 0H15V3H12V0ZM0 13H3V16H0V13Z"
+                fill="var(--heart-sparks)"
+              />
+            </svg>
+          </button>
+          <button type="button" class="card__like-button">
+            <span class="button__text">Like</span>
+          </button>
+        </div>
+      </article>
+
+      <!-- КНОПКА СОХРАНЕНИЯ ПОСЛЕ ВСЕХ КАРТОЧЕК -->
+      <button class="button save-button">
+        <svg class="save-button__icon" width="21" height="21">
+          <use href="./svg/floppy.svg#floppy"></use>
+        </svg>
+        <span class="button__text">Сохранить на память</span>
+      </button>
+    </main>
+
+    <dialog class="modal">
+      <div class="modal__container">
+        <svg class="modal__icon" width="39" height="39">
+          <use href="./svg/floppy.svg#floppy"></use>
+        </svg>
+        <p class="modal__text">Сохранить эту память навсегда?</p>
+      </div>
+      <button class="button modal__close-button">
+        <span class="button__text">ОК</span>
+      </button>
+    </dialog>
+
     <script src="./scripts/like.js"></script>
+    <script>
+      // Открытие и закрытие модального окна
+      const saveButton = document.querySelector(".save-button");
+      const modal = document.querySelector(".modal");
+      const closeButton = document.querySelector(".modal__close-button");
+
+      if (saveButton && modal) {
+        saveButton.addEventListener("click", () => modal.showModal());
+      }
+
+      if (closeButton && modal) {
+        closeButton.addEventListener("click", () => modal.close());
+      }
+    </script>
   </body>
 </html>
