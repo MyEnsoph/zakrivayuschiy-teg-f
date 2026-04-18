@@ -12,7 +12,7 @@
   --title-weight-p: 715;
 
   /* Размеры */
-  --page-width: clamp(18.75rem, 100%, 43.5rem);
+  --page-width: clamp(18.75rem, 100%, 43.75rem);
   --header-logo-size: clamp(3.063rem, 1.909rem + 4.92vw, 4.063rem);
   --header-title-size: clamp(0.875rem, 0.226rem + 2.77vw, 1.438rem);
 

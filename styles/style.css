@@ -24,6 +24,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 98px;
 }
 
 /* ШАПКА*/
@@ -37,8 +38,8 @@
   flex-direction: column;
   border: 2px solid var(--color);
   background-color: var(--bg-color);
-  padding-block: 128px;
-  margin-block: 103px;
+  padding-block: 8.125rem;
+  margin-top: 100px;
   width: var(--page-width);
 }
 
@@ -59,9 +60,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 54px;
   width: var(--page-width);
-  margin-block-end: 100px;
+  gap: 52px;
+  margin-block-end: 50px;
 }
 
 .card {
@@ -135,9 +136,8 @@
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  gap: 0.5rem;
-  padding: 1.5rem;
-  border-top: 2px solid var(--color);
+  gap: 0.3rem;
+  padding: 0 25px 25px 25px;
 }
 
 /* ОБЩИЕ СТИЛИ ДЛЯ ВСЕХ КНОПОК*/
@@ -146,7 +146,7 @@
   position: relative;
   font-family: var(--accent-font);
   font-size: 0.875rem;
-  padding: 0.5rem 1rem;
+  padding: 0.6rem 1rem;
   border: 2px solid var(--color);
   background-color: var(--bg-color);
   color: var(--button-text-color);
@@ -197,7 +197,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0.25rem;
   cursor: pointer;
   background: none;
   border: 2px solid transparent;
@@ -246,7 +245,7 @@
   display: flex;
   align-items: center;
   gap: 8px;
-  margin-top: 54px;
+  padding: 1rem 1.12rem;
 }
 
 .save-button__icon {
@@ -289,6 +288,7 @@
   font-family: var(--accent-font);
   font-size: 0.875rem;
   line-height: 1.5;
+  text-transform: uppercase;
 }
 
 .modal__close-button {
@@ -297,8 +297,7 @@
 
 @media (width <= 375px) {
   .header {
-    padding-block: 50px;
-    margin-block: 50px;
+    padding-block: 122px;
   }
 
   .card__label {
@@ -307,22 +306,18 @@
     font-size: 10px;
   }
 
-  .card__like-group {
-    padding: 1rem;
-  }
-
   .save-button {
-    width: 100%;
-    justify-content: center;
-    margin-top: 30px;
+    width: 306px;
+    height: 84px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 8px;
+    padding: 1rem 1.12rem;
   }
 
-  .card__like-button {
-    width: 100px;
-  }
-
-  .button {
-    font-size: 0.75rem;
-    padding: 0.25rem 0.5rem;
+  .save-button__icon {
+    width: 28px;
+    height: 28px;
   }
 }
